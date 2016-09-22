@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 def Zodiac(birthday):
     # Returns zodiac sign given a birthday in form mm-dd
     Zodiac = [ 'aquarius', 'pisces', 'aries', 'taurus', 'gemini', 'cancer',
-               'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricon']
+               'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn']
     CutOffDay = { '01': 20, '02': 19, '03': 21, '04': 20, '05': 21, '06': 21,
                   '07': 23, '08': 23, '09': 23, '10': 23, '11': 22, '12': 19 }
     month, day = birthday.split('-')
