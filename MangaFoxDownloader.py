@@ -62,6 +62,7 @@ def download_manga(url):
             imageFile.close()
             
         NextPageElem = soup.select('#viewer a')[0]
+        
         # Goes to next chapter if chapter is finished
         if NextPageElem.get('href') == 'javascript:void(0);':
             try:
