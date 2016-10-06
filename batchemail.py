@@ -81,7 +81,7 @@ def main():
         for old, new in wordreplace:
             email_contents = email_contents.replace(old, str(new))
         subject, body = email_contents.split('\n', 1)
-        # Adding attachments will go here
+        # Adding attachments for each individual client will go here
         send_email(sender, password, client_email, rep_email, subject, body, attachment) 
         clients += 1
 
