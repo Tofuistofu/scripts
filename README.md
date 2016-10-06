@@ -1,5 +1,8 @@
 This repository contains scripts I wrote while learning python
 
+# BatchEmailer.py
+Sends emails to multiple clients using a .txt template and replacing keyword fields with information from an excel document. Supports cc'ing of multiple recipients and attaching of supplementary documents. 
+
 # downloadmangafox.py
 Downloads manga from mangafox.me quickly using multiple threads.
 
