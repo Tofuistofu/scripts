@@ -61,7 +61,6 @@ def main():
     with open('BatchEmails_Template.txt') as f:
         template = f.read()
 
-    # Create replacement dictionary
     wb = openpyxl.load_workbook('BatchEmails_Client Info.xlsx')
     sheet = wb.get_sheet_by_name('Client Information')
 
