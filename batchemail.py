@@ -63,14 +63,14 @@ def main():
 
     wb = openpyxl.load_workbook('BatchEmails_Client Info.xlsx')
     sheet = wb.get_sheet_by_name('Client Information')
-
+    # Read spreadsheet data
     sheet_data = []    
     for row in sheet.iter_rows(min_row=2, max_col=sheet.max_column, max_row=sheet.max_row):
         row_values = ()
         for cell in row:
             row_values += cell.value,
         sheet_data.append(row_values)
-
+    # Send customized email for each row of client data in spreadsheet
     clients = 0
     for client_info in sheet_data[1:]:
         client_email = client_info[2]
@@ -81,7 +81,7 @@ def main():
         for old, new in wordreplace:
             email_contents = email_contents.replace(old, str(new))
         subject, body = email_contents.split('\n', 1)
-        
+        # Adding attachments will go here
         send_email(sender, password, client_email, rep_email, subject, body, attachment) 
         clients += 1
 
