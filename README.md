@@ -10,4 +10,4 @@ Downloads manga from mangafox.me quickly using multiple threads.
 Enter your birthday and get your daily horoscope from www.astrology.com
 
 # leagueorganizer.py
-Keep records for a league of teams. Emter match results to update team standings. Data for each league is saved in .json.
+Keep records for a league of teams. Enter match results to update team standings. Data for each league is saved in .json.
