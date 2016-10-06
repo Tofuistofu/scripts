@@ -52,6 +52,12 @@ def send_email(send_from, login_pass, send_to, cc, subject, body, attachments=No
     smtpObj.quit()
 
 def main():
+    try:
+        sender = sys.argv[1]
+        password = sys.argv[2]
+    except IndexError:
+        print 'Usage: -py -username -password'
+        
     with open('BatchEmails_Template.txt') as f:
         template = f.read()
 
