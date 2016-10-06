@@ -1,6 +1,6 @@
 #!\usr\bin\env python
-''' BatchEmail.py - Sends customized emails to clients informing them of their successful applications
-Reads a template from a .txt file and replaces keywords for each client based on information
+''' BatchEmail.py - Sends customized emails to clients
+Reads a template from a .txt file and replaces keyword fields in the template using client information
 in an Excel spreadsheet. Sends a customized email to each client. '''
 
 import openpyxl
